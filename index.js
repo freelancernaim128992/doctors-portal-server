@@ -48,10 +48,6 @@ client.connect(err => {
             })
         })
     })
-    app.post('/appointmentsByDate', (req, res) => {
-        const date = req.body;
-        
-    })
     app.get('/appointments', (req, res) => {
         appointmentsCollection.find({})
         .toArray((err, document) => {
